@@ -9,7 +9,7 @@ class Person(Base):
     __tablename__ = 'person'
 
     id = Column(Integer, primary_key=True)
-    name = Column(String)
+    name = Column(String(50))
     date_of_birth = Column(Date)
     height = Column(Integer)
     weight = Column(Numeric)

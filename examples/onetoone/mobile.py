@@ -9,8 +9,8 @@ class Mobile(Base):
     __tablename__ = 'mobile'
 
     id = Column(Integer, primary_key=True)
-    model = Column(String)
-    number = Column(String)
+    model = Column(String(50))
+    number = Column(String(20))
     owner_id = Column(Integer, ForeignKey('user.id'))
 
     def __init__(self, model, number, owner):

@@ -10,7 +10,7 @@ class User(Base):
     __tablename__ = 'user'
 
     id = Column(Integer, primary_key=True)
-    name = Column(String)
+    name = Column(String(50))
     mobile = relationship("Mobile", uselist=False, backref="owner")
 
     def __init__(self, name):
