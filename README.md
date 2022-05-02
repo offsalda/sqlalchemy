@@ -24,7 +24,6 @@ python -m examples.onetoone
      git clone https://github.com/antoniodiasabc/sqlalchemy
      cd sqlalchemy/
      ls -lrt
-     git pull mysql:5.7
      docker pull mysql:5.7
      docker run --name mysql5 -e MYSQL_ROOT_PASSWORD=mudar123 -p 3306:3306 -d mysql:5.7
      docker ps
