@@ -25,3 +25,7 @@ python -m examples.onetoone
     pip install sqlAlchemy
     pip install PyMySQL
     python3 -m examples.basic
+    
+    python3 -m examples.onetoone
+
+    python3 -m examples.onetomany
